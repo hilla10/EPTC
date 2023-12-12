@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/button.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <title>EPTC | Home Page</title>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="#home">
+                        <img src="images/EPTC_logo.png" alt="" class="logo">
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html" class="active">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hamburger Menu -->
+
+    <button class="hamburger">
+        <div class="bar"></div>
+    </button>
+
+    <!-- MObile-menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li style="--clr: #00ade1;">
+                <a href="index.html" data-text="&nbsp;Home">&nbsp;Home&nbsp;</a></li>
+            <li style="--clr: #dc00d4;"><a href="about.html" data-text="&nbsp;About">&nbsp;About&nbsp;</a></li>
+            <li style="--clr: #ff5100;"><a href="course.html" data-text="&nbsp;Course"
+                    class="active">&nbsp;Course&nbsp;</a>
+            </li>
+            <li style="--clr: #0051ff;"><a href="contact.html" data-text="&nbsp;Contact">&nbsp;Contact&nbsp;</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- showcase -->
+    <section class="showcase-contact " id="home">
+        <div class="showcase-content animation-content-about-us">
+            <h1 class="text-xl">Our Courses</h1>
+        </div>
+    </section>
+
+
+    <!-- Training -->
+    <section class="training">
+        <div class="training-container">
+            <div class="training-title animation-scroll">
+                <h3 class="text-md text-primary">
+                    What We can teaching
+                </h3>
+                <h1 class="text-xl text-secondary">Our Courses</h1>
+                <p class="text-lead">
+                    All our courses are available for you!
+                </p>
+            </div>
+
+            <div class="training-body training-flex">
+
+                <div class="justify-center">
+                    <div class="slide-container1 animation-left">
+                        <div class="slides1">
+                            <img src="images/web-slide-1.jpg" alt="" class="active">
+                            <img src="images/web-slide-2.jpg" alt="">
+                            <img src="images/web-slide-3.jpg" alt="">
+                        </div>
+                        <div class="buttons">
+                            <span class="next1">&#10095;</span>
+                            <span class="prev1">&#10094;</span>
+                        </div>
+
+                        <div class="dot-container1">
+                            <div class="dot1 active" data-attr="0" onclick="changeImage1(this)"></div>
+                            <div class="dot1" data-attr="1" onclick="changeImage1(this)"></div>
+                            <div class="dot1" data-attr="2" onclick="changeImage1(this)"></div>
+                        </div>
+                        <div class="training-text">
+                            <div class="text-md text-primary">
+                                Web Design
+                            </div>
+                            <p class="text-sm">
+                                All our courses are available for you!
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="slide-container2 animation-center">
+                        <div class="slides2">
+                            <img src="images/detabase-slide-1.webp" alt="" class="active">
+                            <img src="images/database-slide-2.webp" alt="">
+                            <img src="images/database-slide-3.jpg" alt="">
+                        </div>
+                        <div class="buttons">
+                            <span class="next2">&#10095;</span>
+                            <span class="prev2">&#10094;</span>
+                        </div>
+
+                        <div class="dot-container2">
+                            <div class="dot2 active" data-attr="0" onclick="changeImage2(this)"></div>
+                            <div class="dot2" data-attr="1" onclick="changeImage2(this)"></div>
+                            <div class="dot2" data-attr="2" onclick="changeImage2(this)"></div>
+                        </div>
+
+                        <div class="training-text">
+                            <div class="text-md text-primary">
+                                database Design
+                            </div>
+                            <p class="text-sm">
+                                All our courses are available for you!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="slide-container3 animation-right">
+                        <div class="slides3">
+                            <img src="images/network-slide-1.jpg" alt="" class="active">
+                            <img src="images/network-slide-2.jpg" alt="">
+                            <img src="images/network-slide-3.jpg" alt="">
+                        </div>
+                        <div class="buttons">
+                            <span class="next3">&#10095;</span>
+                            <span class="prev3">&#10094;</span>
+                        </div>
+
+                        <div class="dot-container3">
+                            <div class="dot3 active" data-attr="0" onclick="changeImage3(this)"></div>
+                            <div class="dot3" data-attr="1" onclick="changeImage3(this)"></div>
+                            <div class="dot3" data-attr="2" onclick="changeImage3(this)"></div>
+                        </div>
+
+                        <div class="training-text">
+                            <div class="text-md text-primary">
+                                Networking
+                            </div>
+                            <p class="text-sm">
+                                All our courses are available for you!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-container">
+                <button class="btn-dark animation-scroll"><span>View More</span></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses -->
+
+    <section class="courses" id="course">
+        <div class="container">
+            <div class="course-header animation-scroll">
+                <h1 class="text-xl text-secondary">Our Course List</h1>
+            </div>
+
+            <div class="course-grid animation-scroll">
+                <div class="course-img">
+                    <img src="images/web-design.webp" alt="">
+                </div>
+
+                <div class="course-content animation-right">
+                    <div class="text-lg text-primary">Web Design</div>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-header text-md text-secondary"> Introduction to
+                                Web Design <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li>Overview of web design principles and concepts</li>
+                                    <li>Understanding the role of a web designer</li>
+                                    <li>Exploring the evolution of web design</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="accordion-header text-md text-secondary"> User Experience (UX) Design <i
+                                    class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li>Understanding user-centered design
+                                    <li>
+                                    <li>Conduction user research and creating personals</li>
+                                    <li>Information architecture and wire framing</li>
+                                    <li>Creating effective user interfaces</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="accordion-header text-md text-secondary"> Visual Design Fundamentals <i
+                                    class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li>Color theory and color schemes</li>
+                                    <li>Typography and font selection</li>
+                                    <li>Layout and composition principles</li>
+                                    <li>Use of imagery and visual elements</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="accordion-header text-md text-secondary"> HTML and CSS Basics <i
+                                    class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li> Introduction to HTML and its structure</li>
+                                    <li>CSS syntax and selectors</li>
+                                    <li>Styling web pages with CSS</li>
+                                    <li> Responsive design and media queries</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="accordion-header text-md text-secondary"> Web Design Tools and Workflow<i
+                                    class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li>Overview of popular web design tools (e.g., Adobe Photoshop, Sketch, Figma,
+                                        VS-Code, Bracket, Notpad,
+                                        Sublime text editor)</li>
+                                    <li>Creating design mockups and prototypes</li>
+                                    <li>Collaboration and handoff processes</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="accordion-header text-md text-secondary">Web Design for Different Devices<i
+                                    class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li>Mobile-first design principles</li>
+                                    <li>Responsive design techniques</li>
+                                    <li>Design considerations for various screen sizes</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="accordion-header text-md text-secondary">Web Accessibility<i
+                                    class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li>Understanding accessibility guidelines and standards</li>
+                                    <li> Designing for users with disabilities</li>
+                                    <li>Implementing accessible design practices</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="btn-contain">
+                        <button class="btn-glow">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Get Start
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="course-grid animation-scroll">
+                <div class="course-img">
+                    <img src="images/database-design.jpg" alt="">
+                </div>
+                <div class="course-content animation-right">
+                    <div class="text-lg text-primary">Database Design</div>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-header text-md text-secondary"> Introduction to Databases <i
+                                    class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li>What is a database?</li>
+                                    <li>Types of databases (relational, NoSQL, etc.)</li>
+                                    <li>Importance of databases in applications
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+                        <div class="accordion-item">
+                            <div class="accordion-header text-md text-secondary"> Relational Database Concepts <i
+                                    class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li>Relational Database Concepts
+                                    <li>
+                                    <li>Tables, rows, and columns</li>
+                                    <li>Primary keys and foreign keys</li>
+                                    <li>Relationships between tables</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="accordion-header text-md text-secondary"> Database Design <i
+                                    class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li>Entity-Relationship (ER) modeling</li>
+                                    <li> Normalization</li>
+                                    <li> Indexing and optimization</li>
+                                    <li> Constraints and data integrity</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="accordion-header text-md text-secondary">Database Management Systems (DBMS) <i
+                                    class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li>Overview of popular DBMSs (Access, MySQL, Oracle, SQL Server, etc.)</li>
+                                    <li>Installation and configuration</li>
+                                    <li>Creating databases and tables</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="accordion-header text-md text-secondary"> Data Manipulation and Querying<i
+                                    class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li>Advanced SQL queries (aggregation, subqueries, etc.)</li>
+                                    <li>Views and stored procedures</li>
+                                    <li>Transactions and concurrency control</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-contain">
+                        <button class="btn-glow">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Get Start
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-grid animation-scroll">
+                <div class="course-img">
+                    <img src="images/computer-network.jpg" alt="">
+                </div>
+
+                <div class="course-content animation-right">
+                    <div class="text-lg text-primary">Networking</div>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-header text-md text-secondary"> Introduction to Networking <i
+                                    class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li>What is networking?</li>
+                                    <li>Types of networks (LAN, WAN, MAN)</li>
+                                    <li>Network topologies</li>
+                                    <li> Network components and devices</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="accordion-header text-md text-secondary">Network Models and Protocols<i
+                                    class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li>OSI (Open Systems Interconnection) model
+                                    <li>
+                                    <li>TCP/IP model</li>
+                                    <li>Ethernet</li>
+                                    <li>IP addressing and subnetting</li>
+                                    <li> Routing protocols</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="accordion-header text-md text-secondary"> Network Infrastructure <i
+                                    class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li>Network cables and connectors</li>
+                                    <li> Network switches and routers</li>
+                                    <li> Wireless networks and Wi-Fi standards</li>
+                                    <li>Network security (firewalls, VPNs)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="accordion-header text-md text-secondary">Network Addressing and Naming <i
+                                    class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li>IP addressing (IPv4 and IPv6)</li>
+                                    <li>DNS (Domain Name System)</li>
+                                    <li>DHCP (Dynamic Host Configuration Protocol)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="accordion-header text-md text-secondary">Network Services and Applications <i
+                                    class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li>HTTP, FTP, SMTP, DNS</li>
+                                    <li>Network file sharing (SMB, NFS)</li>
+                                    <li>VoIP (Voice over IP)</li>
+                                    <li>Virtualization and cloud computing</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="accordion-header text-md text-secondary">Network Design and Planning <i
+                                    class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li>Network architecture</li>
+                                    <li>Network file sharing (SMB, NFS)</li>
+                                    <li>Network requirements and scalability</li>
+                                    <li>Network troubleshooting and monitoring </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="accordion-header text-md text-secondary">Network Security <i
+                                    class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li>Network vulnerabilities and threats</li>
+                                    <li>Access controls and authentication</li>
+                                    <li> Encryption and VPNs</li>
+                                    <li>Intrusion detection and prevention </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="accordion-header text-md text-secondary">Network Management and Administration
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li>Network configuration and management tools</li>
+                                    <li>Network documentation and diagrams</li>
+                                    <li>Performance optimization and monitoring</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-contain">
+                        <button class="btn-glow">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Get Start
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-it animation-scroll" id="about">
+        <p class="text-md text-primary">Simply better Every Day</p>
+        <h2 class="text-xl text-secondary">All you need to know about it</h2>
+        <button class=" btn-out">Learn More</button>
+    </section>
+
+    <!-- Contact -->
+
+    <section class="contact" id="contact">
+        <div class="contact-title animation-scroll">
+            <h1 class="text-xl">Contact Us</h1>
+        </div>
+        <div class="contact-flex">
+            <div class="contact-img animation-left">
+                <img src="./images/contact.jpg" alt="">
+                <!-- <img src="./images/contact-2.jpg" alt=""> -->
+            </div>
+            <form>
+                <div class="form-container animation-right">
+                    <div class="input-box">
+                        <input type="text" name="fname" required="required">
+                        <span>First Name</span>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="text" name="lname" required="required">
+                        <span>Last Name</span>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="email" name="email" required="required">
+                        <span>Email</span>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" name="password" required="required">
+                        <span>Password</span>
+                    </div>
+
+                    <div class="input-box">
+                        <textarea cols="55" rows="10"></textarea>
+                        <span>Message</span>
+                    </div>
+                </div>
+
+                <button class="btn-outline animation-scroll" type="submit">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="logo">
+                <a href="#home">
+                    <img src="images/EPTC_logo.png" alt="" class="logo">
+                </a>
+            </div>
+
+            <div class="flex">
+                <nav class="hover-effect">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a></li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#course">Courses</a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <div class="social-link">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fab fa-facebook fa-2xl"></i></a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fab fa-twitter fa-2xl"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram fa-2xl"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-pinterest fa-2xl"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; EPTC 2016</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

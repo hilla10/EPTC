@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/button.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <title>EPTC | About</title>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="#home">
+                        <img src="images/EPTC_logo.png" alt="" class="logo">
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hamburger Menu -->
+
+    <button class="hamburger">
+        <div class="bar"></div>
+    </button>
+
+    <!-- MObile-menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li style="--clr: #00ade1;">
+                <a href="index.html" data-text="&nbsp;Home">&nbsp;Home&nbsp;</a></li>
+            <li style="--clr: #dc00d4;">
+                <a href="about.html" data-text="&nbsp;About" class="active">&nbsp;About&nbsp;</a>
+            </li>
+            <li style="--clr: #ff5100;">
+                <a href="course.html" data-text="&nbsp;Course">&nbsp;Course&nbsp;</a>
+            </li>
+            <li style="--clr: #0051ff;">
+                <a href="contact.html" data-text="&nbsp;Contact">&nbsp;Contact&nbsp;</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- showcase -->
+    <section class="about_us animation-content-about-us" id="home">
+        <div class="about_us-img">
+            <img src="images/tms-building.jpg" alt="EPTC College">
+        </div>
+        <div class="about_us-content ">
+            <h1 class="text-xl">About Us</h1>
+            <p class="text-sm">
+                Teferi Mekonnen school was founded in 1925 by the Regent Teferi Mekonnen: the future Emperor
+                Haileselassie I. The school building itself constructed under Negus Teferi’s order, was designed to
+                educate young Ethiopians in modern education. It was one of the first public buildings in Addis Ababa
+                during the Pre-Italian period. Its architectural style and construction techniques are quite unique and
+                one amongst few of its kind in the city of Addis Abeba with Its historical function still continuing to
+                this day. The Visual Arts and the Music departments were added in 2007, and have graduated students
+                since
+                2010.
+
+                Our visit today focuses on the Visual Arts department which accepts 40-50 students for three-year
+                courses. Quite a number of students who graduated from the Arts department have joined Alle Fine Art
+                School (AAU) to further their education in BSC and MCS degree programs. Talented artists have Graduated
+                to go on and become studio artists that have exhibit their work locally and internationally.
+            </p>
+            <button class=" btn-border-animate " style="--clr: #1e9bff">
+                <span>Learn More</span><i></i></button>
+        </div>
+    </section>
+
+
+    <!-- Courses -->
+
+    <section class="courses course-about" id="course">
+        <div class="container">
+            <div class="course-header animation-scroll">
+                <h1 class="text-xl text-secondary"> Our Courses</h1>
+            </div>
+
+            <div class="course-grid animation-scroll">
+                <div class="course-img reverse">
+                    <img src="images/web-development.jpg" alt="">
+                </div>
+                <div class="course-content animation-right">
+                    <h2 class="text-lg text-primary">Web Design</h2>
+                    <p class="text-sm">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit accusantium maiores quae
+                        perspiciatis,
+                        voluptate optio earum quidem reiciendis inventore velit!
+                    </p>
+                    <div class="btn-contain">
+                        <div class="btn-dark">Learn More</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-grid animation-scroll">
+                <div class="course-img reverse">
+                    <img src="images/Database.jpg" alt="">
+                </div>
+                <div class="course-content animation-right">
+                    <h2 class="text-lg text-primary">Database Design</h2>
+                    <p class="text-sm">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit accusantium maiores quae
+                        perspiciatis,
+                        voluptate optio earum quidem reiciendis inventore velit!
+                    </p>
+                    <div class="btn-contain">
+                        <div class="btn-dark">Learn More</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-grid animation-scroll">
+                <div class="course-img reverse">
+                    <img src="images/network-course.webp" alt="">
+                </div>
+
+                <div class="course-content animation-right">
+                    <h2 class="text-lg text-primary">Networking</h2>
+                    <p class="text-sm">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit accusantium maiores quae
+                        perspiciatis,
+                        voluptate optio earum quidem reiciendis inventore velit!
+                    </p>
+                    <div class="btn-contain">
+                        <div class="btn-dark">Learn More</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-it animation-scroll" id="about">
+        <p class="text-md text-primary">Simply better Every Day</p>
+        <h2 class="text-xl text-secondary">All you need to know about it</h2>
+        <button class=" btn-out">Learn More</button>
+    </section>
+
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="logo">
+                <a href="#home">
+                    <img src="images/EPTC_logo.png" alt="" class="logo">
+                </a>
+            </div>
+
+            <div class="flex">
+                <nav class="hover-effect">
+                    <ul>
+                        <li>
+                            <a href="#home">Home</a></li>
+                        <li><a href="#contact">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social-link">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fab fa-facebook fa-2xl"></i></a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fab fa-twitter fa-2xl"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram fa-2xl"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-pinterest fa-2xl"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; EPTC 2016</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>

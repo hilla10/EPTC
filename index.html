@@ -8,9 +8,17 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/button.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
     <script src="js/main.js" defer></script>
-    <title>EPTC Home Page</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/android-chrome-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>EPTC | Home Page</title>
 </head>
 
 <body>
@@ -24,9 +32,10 @@
                     </a>
                 </div>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -41,134 +50,263 @@
     <!-- MObile-menu -->
     <div class="mobile-menu">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li style="--clr: #00ade1;">
+                <a href="index.html" data-text="&nbsp;Home" class="active">&nbsp;Home&nbsp;</a></li>
+            <li style="--clr: #dc00d4;"><a href="about.html" data-text="&nbsp;About">&nbsp;About&nbsp;</a></li>
+            <li style="--clr: #ff5100;"><a href="course.html" data-text="&nbsp;Course">&nbsp;Course&nbsp;</a>
+            </li>
+            <li style="--clr: #0051ff;"><a href="contact.html" data-text="&nbsp;Contact">&nbsp;Contact&nbsp;</a>
+            </li>
         </ul>
     </div>
 
     <!-- showcase -->
     <section class="showcase" id="home">
-        <div class="showcase-content">
+        <div class="showcase-content animation-content">
             <h1 class="text-xl">Entoto Poly Technic Collages</h1>
             <p class="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo totam iusto rerum repellat voluptatem quis
-                culpa saepe. Eligendi et, nemo praesentium adipisci sapiente odio exercitationem deserunt expedita
-                nostrum laborum iure?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel hic sed nemo. Reprehenderit error nihil
+                fugiat dicta, exercitationem consequatur dignissimos molestias et omnis iure aspernatur asperiores illo,
+                magni repudiandae minima. Tempora corrupti deserunt debitis dignissimos commodi aliquam dolorem numquam
+                eaque illum quis expedita, exercitationem nihil laborum aut at magni vel!
             </p>
+            <button class="btn btn-animate btn-effect">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Learn More</button>
         </div>
     </section>
 
-    <!-- Card  -->
-
-    <section class="cards">
-        <div class="card-title">
-            <h2 class="text-xl">Entoto Poly Technic Collages Courses</h2>
+    <!-- Training -->
+    <section class="training">
+        <div class="training-header">
+            <h1 class="text-xl animation-scroll">
+                Get IT Trained - Our Training Programs
+            </h1>
         </div>
-        <div class="card-grid">
-            <div class=" card card-1">
-                <div class="card-content">
-                    <h2 class="text-lg">IT Department</h2>
-                    <div class="text-sm">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis nemo vitae iste quibusdam
-                        obcaecati minus asperiores architecto, veritatis culpa sint!
-                    </div>
-                    <button class="btn">Learn More</button>
-                </div>
+        <div class="training-container">
+            <div class="training-title animation-scroll">
+                <h3 class="text-md text-primary">
+                    What We can teaching
+                </h3>
+                <h1 class="text-xl text-secondary">Our Courses</h1>
+                <p class="text-lead">
+                    All our courses are available for you!
+                </p>
             </div>
 
-            <div class="card card-2">
-                <div class="card-content">
-                    <h2 class="text-lg">Furniture Making Department</h2>
-                    <div class="text-sm">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis nemo vitae iste quibusdam
-                        obcaecati minus asperiores architecto, veritatis culpa sint!
+            <div class="training-body training-flex">
+
+                <div class="justify-center">
+                    <div class="slide-container1 animation-left">
+                        <div class="slides1">
+                            <img src="images/web-slide-1.jpg" alt="" class="active">
+                            <img src="images/web-slide-2.jpg" alt="">
+                            <img src="images/web-slide-3.jpg" alt="">
+                        </div>
+                        <div class="buttons">
+                            <span class="next1">&#10095;</span>
+                            <span class="prev1">&#10094;</span>
+                        </div>
+
+                        <div class="dot-container1">
+                            <div class="dot1 active" data-attr="0" onclick="changeImage1(this)"></div>
+                            <div class="dot1" data-attr="1" onclick="changeImage1(this)"></div>
+                            <div class="dot1" data-attr="2" onclick="changeImage1(this)"></div>
+                        </div>
+                        <div class="training-text">
+                            <div class="text-md text-primary">
+                                Web Design
+                            </div>
+                            <p class="text-sm">
+                                All our courses are available for you!
+                            </p>
+                        </div>
                     </div>
-                    <button class="btn">Learn More</button>
+
+
+                    <div class="slide-container2 animation-center">
+                        <div class="slides2">
+                            <img src="images/detabase-slide-1.webp" alt="" class="active">
+                            <img src="images/database-slide-2.webp" alt="">
+                            <img src="images/database-slide-3.jpg" alt="">
+                        </div>
+                        <div class="buttons">
+                            <span class="next2">&#10095;</span>
+                            <span class="prev2">&#10094;</span>
+                        </div>
+
+                        <div class="dot-container2">
+                            <div class="dot2 active" data-attr="0" onclick="changeImage2(this)"></div>
+                            <div class="dot2" data-attr="1" onclick="changeImage2(this)"></div>
+                            <div class="dot2" data-attr="2" onclick="changeImage2(this)"></div>
+                        </div>
+
+                        <div class="training-text">
+                            <div class="text-md text-primary">
+                                database Design
+                            </div>
+                            <p class="text-sm">
+                                All our courses are available for you!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="slide-container3 animation-right">
+                        <div class="slides3">
+                            <img src="images/network-slide-1.jpg" alt="" class="active">
+                            <img src="images/network-slide-2.jpg" alt="">
+                            <img src="images/network-slide-3.jpg" alt="">
+                        </div>
+                        <div class="buttons">
+                            <span class="next3">&#10095;</span>
+                            <span class="prev3">&#10094;</span>
+                        </div>
+
+                        <div class="dot-container3">
+                            <div class="dot3 active" data-attr="0" onclick="changeImage3(this)"></div>
+                            <div class="dot3" data-attr="1" onclick="changeImage3(this)"></div>
+                            <div class="dot3" data-attr="2" onclick="changeImage3(this)"></div>
+                        </div>
+
+                        <div class="training-text">
+                            <div class="text-md text-primary">
+                                Networking
+                            </div>
+                            <p class="text-sm">
+                                All our courses are available for you!
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="card card-3">
-                <div class="card-content">
-                    <h2 class="text-lg">ART Department</h2>
-                    <div class="text-sm">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis nemo vitae iste quibusdam
-                        obcaecati minus asperiores architecto, veritatis culpa sint!
-                    </div>
-                    <button class="btn">Learn More</button>
-                </div>
-            </div>
-
-            <div class="card card-4">
-                <div class="card-content">
-                    <h2 class="text-lg">Textile and Garment Department</h2>
-                    <div class="text-sm">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis nemo vitae iste quibusdam
-                        obcaecati minus asperiores architecto, veritatis culpa sint!
-                    </div>
-                    <button class="btn">Learn More</button>
-                </div>
+            <div class="btn-container">
+                <button class="btn-dark animation-scroll"><span>View More</span></button>
             </div>
         </div>
     </section>
 
-    <!-- About us-->
+    <!-- Courses -->
 
-    <section class="about-us" id="about">
+    <section class="courses" id="course">
         <div class="container">
-            <div class="about-content">
-                <h1 class="text-xl">About Entoto Poly Technic Colleges</h1>
-                <p class="text-sm">
-                    Teferi Mekonnen school was founded in 1925 by the Regent Teferi Mekonnen: the future Emperor
-                    Haileselassie I. The school building itself constructed under Negus Teferi’s order, was designed to
-                    educate young Ethiopians in modern education. It was one of the first public buildings in Addis
-                    Ababa during the Pre-Italian period. Its architectural style and construction techniques are quite
-                    unique and one amongst few of its kind in the city of Addis Abeba with Its historical function still
-                    continuing to this day. The Visual Arts and the Music departments were added in 2007, and have
-                    graduated students since 2010.
-                </p>
-                <p class="text-sm">
-                    Our visit today focuses on the Visual Arts department which accepts 40-50 students for three-year
-                    courses. Quite a number of students who graduated from the Arts department have joined Alle Fine Art
-                    School (AAU) to further their education in BSC and MCS degree programs. Talented artists have
-                    Graduated to go on and become studio artists that have exhibit their work locally and
-                    internationally.
-                </p>
-                <p class="text-sm">
-                    The Art department has Graphics, Painting and Sculpture training departments. The students’ work and
-                    their talent is impeccable and is well identified by dedicated trainers that have the intricate
-                    skill set to identify students’ talent and the encouraging disposition. The fatherly guidance and
-                    the year round art exhibition in the main hall of the Arts department building along with the
-                    monthly panel discussion (lecture series) by successful artists makes the school unique in its
-                    teaching methods.
-                </p>
+            <div class="course-header animation-scroll">
+                <h1 class="text-xl text-secondary">Courses</h1>
+            </div>
+
+            <div class="course-grid animation-scroll">
+                <div class="course-img">
+                    <img src="images/web-development.jpg" alt="">
+                </div>
+                <div class="course-content animation-right">
+                    <h2 class="text-lg text-primary">Web Design</h2>
+                    <p class="text-sm">
+                        Web design refers to the process of creating and designing the visual layout, user interface,
+                        and
+                        overall look and feel of a website. It involves various elements such as layout, color scheme,
+                        typography, graphics, images, and interactive features to deliver an engaging and user-friendly
+                        experience.
+                    </p>
+                    <div class="btn-contain">
+                        <div class="btn-dark">Learn More</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-grid animation-scroll">
+                <div class="course-img">
+                    <img src="images/Database.jpg" alt="">
+                </div>
+                <div class="course-content animation-right">
+                    <h2 class="text-lg text-primary">Database Design</h2>
+                    <p class="text-sm">
+                        A database is a structured collection of data that is organized and stored for efficient
+                        retrieval, manipulation, and management. It is designed to store and manage large amounts of
+                        data
+                        in a systematic and organized manner, allowing users and applications to easily access, update,
+                        and retrieve the information.
+                    </p>
+                    <div class="btn-contain">
+                        <div class="btn-dark">Learn More</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-grid animation-scroll">
+                <div class="course-img">
+                    <img src="images/network-course.webp" alt="">
+                </div>
+
+                <div class="course-content animation-right">
+                    <h2 class="text-lg text-primary">Networking</h2>
+                    <p class="text-sm">
+                        A network is a collection of interconnected devices, such as computers, servers, routers,
+                        switches, and other hardware components, that are linked together to enable communication and
+                        data exchange. It allows devices to share resources, information, and services with each other.
+                    </p>
+                    <div class="btn-contain">
+                        <div class="btn-dark">Learn More</div>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
+
+    <section class="about-it animation-scroll" id="about">
+        <p class="text-md text-primary">Simply better Every Day</p>
+        <h2 class="text-xl text-secondary">All you need to know about it</h2>
+        <button class=" btn-out">Learn More</button>
     </section>
 
     <!-- Contact -->
 
     <section class="contact" id="contact">
-        <div class="contact-title">
+        <div class="contact-title animation-scroll">
             <h1 class="text-xl">Contact Us</h1>
         </div>
-        <form>
-            <div class="form-container">
-                <label for="fname">First Name</label>
-                <input type="text" name="fname" placeholder="First Name">
-
-                <label for="lname">Last Name</label>
-                <input type="text" name="lname" placeholder="Last Name">
-
-                <label for="email">Email</label>
-                <input type="email" name="email" placeholder="Enter Your Email Address">
-
-                <label for="password">Password</label>
-                <input type="password" name="password" placeholder="Password">
-
-                <textarea cols="55" rows="10" placeholder="Message"></textarea>
+        <div class="contact-flex">
+            <div class="contact-img animation-left">
+                <img src="./images/contact.jpg" alt="">
+                <!-- <img src="./images/contact-2.jpg" alt=""> -->
             </div>
-        </form>
+            <form>
+                <div class="form-container animation-right">
+                    <div class="input-box">
+                        <input type="text" name="fname" required="required">
+                        <span>First Name</span>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="text" name="lname" required="required">
+                        <span>Last Name</span>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="email" name="email" required="required">
+                        <span>Email</span>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" name="password" required="required">
+                        <span>Password</span>
+                    </div>
+
+                    <div class="input-box">
+                        <textarea cols="55" rows="10"></textarea>
+                        <span>Message</span>
+                    </div>
+                </div>
+
+                <button class="btn-outline animation-scroll" type="submit">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Submit</button>
+            </form>
+        </div>
     </section>
 
     <!-- Footer -->
@@ -182,31 +320,44 @@
             </div>
 
             <div class="flex">
-                <nav>
+                <nav class="hover-effect">
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li>
+                            <a href="index.html">Home</a></li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#course">Courses</a>
+                        </li>
+
                     </ul>
                 </nav>
                 <div class="social-link">
-                        <ul>
-                            <li>
-                                <a href="#"><i class="fab fa-facebook fa-2xl"></i></a>
-                            </li>
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fab fa-facebook fa-2xl"></i></a>
+                        </li>
 
-                            <li>
-                                <a href="#"><i class="fab fa-twitter fa-2xl"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fab fa-instagram fa-2xl"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fab fa-pinterest fa-2xl"></i></a>
-                            </li>
-                        </ul>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter fa-2xl"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram fa-2xl"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-pinterest fa-2xl"></i></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; EPTC 2016</p>
         </div>
     </footer>
 

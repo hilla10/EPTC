@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/button.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="js/main.js" defer></script>
+    <title>EPTC | Home Page</title>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="#home">
+                        <img src="images/EPTC_logo.png" alt="" class="logo">
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hamburger Menu -->
+
+    <button class="hamburger">
+        <div class="bar"></div>
+    </button>
+
+    <!-- MObile-menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li style="--clr: #00ade1;">
+                <a href="index.html" data-text="&nbsp;Home">&nbsp;Home&nbsp;</a></li>
+            <li style="--clr: #dc00d4;"><a href="about.html" data-text="&nbsp;About">&nbsp;About&nbsp;</a></li>
+            <li style="--clr: #ff5100;"><a href="course.html" data-text="&nbsp;Course">&nbsp;Course&nbsp;</a>
+            </li>
+            <li style="--clr: #0051ff;"><a href="contact.html" data-text="&nbsp;Contact"
+                class="active">&nbsp;Contact&nbsp;</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- showcase -->
+    <section class="showcase-contact " id="home">
+        <div class="showcase-content animation-content-about-us">
+            <h1 class="text-xl">contact Us</h1>
+        </div>
+    </section>
+
+
+
+    <!-- Contact -->
+
+    <section class="contact" id="contact">
+        <div class="contact-flex">
+            <div class="contact-img animation-left">
+                <img src="./images/contact.jpg" alt="">
+                <!-- <img src="./images/contact-2.jpg" alt=""> -->
+            </div>
+            <form>
+                <div class="form-container animation-right">
+                    <div class="input-box">
+                        <input type="text" name="fname" required="required">
+                        <span>First Name</span>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="text" name="lname" required="required">
+                        <span>Last Name</span>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="email" name="email" required="required">
+                        <span>Email</span>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" name="password" required="required">
+                        <span>Password</span>
+                    </div>
+
+                    <div class="input-box">
+                        <textarea cols="55" rows="10"></textarea>
+                        <span>Message</span>
+                    </div>
+                </div>
+
+                <button class="btn-outline animation-scroll" type="submit">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Address -->
+
+    <section class="address">
+        <div class="address-container animation-left">
+            <div class="address-header">
+                <div class="text-xl">Address</div>
+                <div class="underline"></div>
+            </div>
+            <div class="address-content">
+                <p class="text-sm">We’re excited to meet you! Feel free to get in touch with us within these working
+                    hours.
+                </p>
+            </div>
+            <div class="address-contact">
+                <ul>
+                    <li>
+                        <h3>Email</h3>
+                        <a href="#">hillaman592@gmail.com</a>
+                    </li>
+
+                    <li>
+                        <h3>Phone</h3>
+                        <a href="#">+251 011 111 1111</a>
+                    </li>
+
+                    <li>
+                        <h3>Address</h3>
+                        <a href="#">6 Kilo, Medhanialem Church near</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="work-container animation-right">
+            <div class="working-header">
+                <div class="text-xl">Working hours</div>
+                <div class="underline"></div>
+            </div>
+            <div class="working-contact">
+                <ul>
+                    <li>
+                        <p>Monday</p>
+                        <span>
+                            2:30 AM - 2:30PM
+                        </span>
+                    </li>
+
+                    <li>
+                        <p>Tuesday</p>
+                        <span>
+                            2:30 AM - 2:30PM
+                        </span>
+                    </li>
+
+                    <li>
+                        <p>Wednesday</p>
+                        <span>
+                            2:30 AM - 2:30PM
+                        </span>
+                    </li>
+
+                    <li>
+                        <p>Thursday</p>
+                        <span>
+                            2:30 AM - 2:30PM
+                        </span>
+                    </li>
+                    <li>
+                        <p>Friday</p>
+                        <span>
+                            2:30 AM - 2:30PM
+                        </span>
+                    </li>
+                    <li>
+                        <p>Saturday</p>
+                        <span>
+                            2:30 AM - 2:30PM
+                        </span>
+                    </li>
+                    <li>
+                        <p>Sunday</p>
+                        <span>
+                            2:30 AM - 2:30PM
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+
+    <section>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3245.9976249126166!2d38.76331699545831!3d9.050986146332908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8f6cd745d673%3A0xba5f61049290050c!2sEntoto%20Polytechnic%20College!5e1!3m2!1sen!2set!4v1702278963539!5m2!1sen!2set"
+                width="100%" height="600px" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="logo">
+                <a href="#home">
+                    <img src="images/EPTC_logo.png" alt="" class="logo">
+                </a>
+            </div>
+
+            <div class="flex contact-us-flex">
+                <nav class="hover-effect">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a></li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="#course">Courses</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <div class="social-link-hover">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="fab fa-facebook fa-2xl"></span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="fab fa-twitter fa-2xl"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="fab fa-instagram fa-2xl"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="fab fa-pinterest fa-2xl"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright copy">
+            <p>Copyright &copy; EPTC 2016</p>
+        </div>
+    </footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script>
+        function initMap() {
+            var coordinates = {
+                lat: 37.7749,
+                lng: -122.4194
+            }; // Set the desired coordinates for the map
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: coordinates,
+                zoom: 12 // Adjust the zoom level as needed
+            });
+
+            // You can add additional customization or markers to the map here
+        }
+    </script>
+</body>
+
+</html>
